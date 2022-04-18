@@ -71,21 +71,36 @@ color: var(--accent-color);
 
 .header{
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: tomato;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+}
+.header-nav{
+    display: flex;
 }
 .header-list-nav{
     display: flex;
 }
 .header-item{
     margin-right: 50px;
-}
+    padding-top: 32px;
+    padding-bottom: 32px;
+}   
 .header-list-nav .header-item:last-child{
     margin-right: 0px;
 }
 .header-list-contact{
     display: flex;
+    margin-left: auto;
+}
+.header-item-contact+.header-item-contact{
+    padding-left: 50px;
+}
+.header-logo{
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .header-link {
 font-weight: 500;
