@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-modal/3.14.4/react-modal.min.js"
-    integrity="sha512-c8TkLDLvgzEeX3w/zBJNYGwg/ubWh3ldXPs3AjY4ErCwEcjfbYubW3XELRsV2n3XzBn6Uq/bZvW3jWuKqlutVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>"Вебстудия"</title>
-</head>
-
-<body>
-  <header class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>"Вебстудия"</title>
+  </head>
+  <body>
+    <header class="header">
     <div class="container">
-    <nav>
+    <nav class="header-nav">
       <a href="" class="header-logo link">Web<span class="header-logo-studio">Studio</span></a>
       <ul class="header-list-nav list">
         <li class="header-item"><a href="./index.html" class="header-link link">Студия</a></li>
@@ -28,82 +25,80 @@
       </ul>
     </nav>
     <ul class="header-list-contact list">
-      <li class="header-item-contact"><a href="mailto:info@devstudio.com"
-          class="header-item-contact-link link">info@devstudio.com</a></li>
-      <li class="header-item-contact"><a href="tel:+380961111111" class="header-item-contact-link link">+38 096 111 11
-          11</a></li>
+      <li class="header-item-contact"><a href="mailto:info@devstudio.com" class="header-item-contact-link link">info@devstudio.com</a></li>
+      <li class="header-item-contact"><a href="tel:+380961111111" class="header-item-contact-link link">+38 096 111 11 11</a></li>
     </ul>
-  </div>
-  </header>
+    </div>
+    </header>
     <main>
       <section>
-        <div class="container">
-      <h1 class="visually-hidden">Портфолио</h1>
+        <div class="container container-btn">
+        <h1 class="visually-hidden">Портфолио</h1>
         <ul class="portfolio-filter-list list">
-          <li><button type="button" class="portfolio-btn">Все</button></li>
-          <li><button type="button" class="portfolio-btn">Веб-сайты</button></li>
-          <li><button type="button" class="portfolio-btn">Приложения</button></li>
-          <li><button type="button" class="portfolio-btn">Дизайн</button></li>
-          <li><button type="button" class="portfolio-btn">Маркетинг</button></li>
+          <li class="filter-btn"><button type="button" class="portfolio-btn">Все</button></li>
+          <li class="filter-btn"><button type="button" class="portfolio-btn">Веб-сайты</button></li>
+          <li class="filter-btn"><button type="button" class="portfolio-btn">Приложения</button></li>
+          <li class="filter-btn"><button type="button" class="portfolio-btn">Дизайн</button></li>
+          <li class="filter-btn"><button type="button" class="portfolio-btn">Маркетинг</button></li>
         </ul>
         <ul class="portfolio-project-list list">
-            <li>
+            <li class="portfolio-box">
               <a href="" class="portfolio-project-link link">
                 <img src="./images/imgPortfol_1.jpg" alt="" width="370">
                 <h2 class="portfolio-headline">Технокряк</h2>
                 <p class="portfolio-title">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-box">
               <a href="" class="portfolio-project-link link">
                 <img src="./images/imgPortfol_2.jpg" alt="" width="370">
                 <h2 class="portfolio-headline">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
                 <p class="portfolio-title">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-box">
               <a href="" class="portfolio-project-link link">
                 <img src="./images/imgPortfol_3.jpg" alt="" width="370">
                 <h2 class="portfolio-headline">Ресторан <span lang="en">Seafood</span></h2>
                 <p class="portfolio-title">Приложение</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-box">
               <a href="" class="portfolio-project-link link">
                 <img src="./images/imgPortfol_4.jpg" alt="" width="370">
                 <h2 class="portfolio-headline">Проект <span lang="en">Prime</span></h2>
                 <p class="portfolio-title">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-box">
               <a href="" class="portfolio-project-link link">
                 <img src="./images/imgPortfol_5.jpg" alt="" width="370">
                 <h2 class="portfolio-headline">Проект <span lang="en">Boxes</span></h2>
                 <p class="portfolio-title">Приложение</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-box">
               <a href="" class="portfolio-project-link link">
                 <img src="./images/imgPortfol_6.jpg" alt="" width="370">
                 <h2 class="portfolio-headline">Inspiration has no Borders</h2>
                 <p class="portfolio-title">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-box">
               <a href="" class="portfolio-project-link link">
                 <img src="./images/imgPortfol_7.jpg" alt="" width="370">
                 <h2 class="portfolio-headline">Издание <span lang="en">Limited Edition</span></h2>
                 <p class="portfolio-title">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-box">
               <a href="" class="portfolio-project-link link">
                 <img src="./images/imgPortfol_8.jpg" alt="" width="370">
                 <h2 class="portfolio-headline">Проект <span lang="en">LAB</span></h2>
                 <p class="portfolio-title">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-box">
               <a href="" class="portfolio-project-link link">
                 <img src="./images/imgPortfol_9.jpg" alt="" width="370">
                 <h2 class="portfolio-headline">Growing Business</h2>
