@@ -45,7 +45,11 @@ img{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    }    
+}   
+.section {
+    padding-top: var(--tipical-padding);
+    padding-bottom: var(--tipical-padding);
+}
     
 /* ----Лого---- */
 
@@ -73,10 +77,12 @@ color: var(--accent-color);
 }
 .header .container{
     display: flex;
-    align-items: center;
 }
 .header-nav{
     display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
 }
 .header-list-nav{
     display: flex;
@@ -84,8 +90,6 @@ color: var(--accent-color);
 
 .header-item{
     margin-right: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }   
 .header-list-nav .header-item:last-child{
     margin-right: 0px;
@@ -93,6 +97,7 @@ color: var(--accent-color);
 .header-list-contact{
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 .header-item-contact+.header-item-contact{
     padding-left: 50px;
@@ -165,12 +170,13 @@ padding: 10px 32px;
 border-radius: 4px;
 border: 1px solid transparent;
 }
-
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color:  #188CE8;;
+}
 /* ----Секция Особенности---- */
 .feature{
     padding-top: var(--tipical-padding);
-    padding-bottom: var(--tipical-padding);
-  
 }
 .feature-list{
     display: flex;
@@ -201,13 +207,6 @@ color: var(--title-color);
 /* ----Секция Наши задачи---- */
 /* ----Секция Наша команда---- */
 
-.task{
-    padding-bottom: var(--tipical-padding);
-}
-.team{
-    padding-top: var(--tipical-padding);
-    padding-bottom: var(--tipical-padding);
-}
 .task-list,
 .team-list{
     display: flex;
@@ -215,7 +214,7 @@ color: var(--title-color);
 .task-item +.task-item{
     margin-left: 30px;
 }
-.task-item: :last-child{
+.task-item:last-child{
     margin-right: 0px;
 }
 .team-item{
