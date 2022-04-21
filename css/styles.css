@@ -70,16 +70,11 @@ color: var(--accent-color);
 
 /* ----Хедер---- */
 
-.header{
-    display: block;
-}
 .header .container{
     display: flex;
 }
 .header-nav{
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
 }
 .header-list-nav{
@@ -97,7 +92,7 @@ color: var(--accent-color);
     align-items: center;
 }
 .header-item-contact+.header-item-contact{
-    padding-left: 50px;
+    margin-left: 50px;
 }
 .header-logo{
     margin-right: 93px;
@@ -193,7 +188,6 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--headline-color);
-margin-top: 30px;
 margin-bottom: var(--tipical-margin);
 }
 .feature-title{
@@ -206,6 +200,9 @@ color: var(--title-color);
 /* ----Секция Наши задачи---- */
 /* ----Секция Наша команда---- */
 
+.team {
+    background-color: #F5F4FA;
+}
 .task-list,
 .team-list{
     display: flex;
@@ -232,6 +229,10 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--headline-color);
 }
+.team-name{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-item-headline{
 font-weight: 500;
 font-size: 16px;
@@ -239,7 +240,6 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--headline-color);
-margin-top: 30px;
 margin-bottom: var(--tipical-margin);
 }
 .team-title{
@@ -288,14 +288,10 @@ color: rgba(255, 255, 255, 0.6);
 
 /* ----Портфолио---- */
 
-.container-btn{
-    padding-top: var(--tipical-padding);
-    padding-bottom: var(--tipical-padding);
-}
 .portfolio-filter-list{
     display: flex;
     justify-content: center;
-    padding-bottom: 34px;
+    margin-bottom: 50px;
 }
 .portfolio-project-list{
     display: flex;
@@ -339,8 +335,6 @@ background-color: var(--accent-color);
     margin-bottom: 0;
 }
 .portfolio-headline {
-    margin-top: 20px;
-    margin-left: 24px;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
@@ -348,7 +342,6 @@ background-color: var(--accent-color);
 }
     .portfolio-title{
     margin-top: 4px;
-    margin-left: 24px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
